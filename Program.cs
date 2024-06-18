@@ -84,7 +84,6 @@ static object StringToObject(string s)
     var targetObjectHandler = Activator.CreateInstance(null, classInformationString[0]);
     var targetObject = targetObjectHandler?.Unwrap();
     var targetType = targetObject?.GetType();
-    var propertiesInfo = targetType?.GetProperties();
 
     for (int i = 1; i < str.Length - 1; i++)
     {
