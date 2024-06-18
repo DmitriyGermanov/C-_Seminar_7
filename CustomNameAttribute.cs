@@ -2,8 +2,5 @@
 {
     public string Name { get; }
 
-    public CustomNameAttribute(string name)
-    {
-        Name = name;
-    }
+    public CustomNameAttribute(string name) => Name = name;
 }
